@@ -1,0 +1,35 @@
+.overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  z-index: 5;
+  overflow-y: auto;
+  position: fixed !important;
+  min-height: 100%;
+
+  .overlay-box {
+    width: 440px;
+    padding: 2%;
+    max-height: 100%;
+
+    @media (max-width: 420px) {
+      width: 356px;
+    }
+  }
+
+  .bulma-field {
+    @media (max-width: 1023px) {
+      .column {
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .column + .column {
+        padding-top: 0;
+      }
+    }
+  }
+}
