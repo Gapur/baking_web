@@ -1,0 +1,5 @@
+# dependencies
+/node_modules
+
+# only sass files
+/baking_web/src/**/*.css
